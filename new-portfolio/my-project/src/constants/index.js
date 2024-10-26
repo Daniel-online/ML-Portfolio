@@ -9,7 +9,13 @@ we need more security on the web and simpler production workflows
 These two statements may often conflict, but creating the balance within both is what made me deep dive into the node ecossystem to make it better than we thought it could be.
 `;
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT_FIRST = ` Since i was a kid i loved to script silly things for games and attempted to make my own website at 14 (i failed haha). I started SWE course at UERJ university in 2021 at midst of the pandemic. Then, i was fascinated with the power of computer science and the capabilities some technologies as ruby and c could give to one single developer. 
+`
+export const ABOUT_TEXT_SECOND=`Many late night code sessions later, i have developed a particular interest in developing APIs, working with business logic, athentication, cyphers, requests and backend in general while also keeping my interest in React and Angular. 
+`
+export const ABOUT_TEXT_THIRD= `To manage all those interests i decided to reduced complexity and use javascript as the basis of my stack. This has led me to deep dive in Node.js and its powerful capacities, wich made me make it my goal to become a specialist in Node.js and main contributor to the original repository. 
+`
+export const ABOUT_TEXT_FOURTH=`I am highly interested in working with aplications from the ground up but, especially using Express or Adonis as backend. `
 
 export const EXPERIENCES = [
   {
