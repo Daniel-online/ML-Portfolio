@@ -8,6 +8,7 @@ import About from "./components/About"
 import Three from "./components/Three"
 import { Html } from "@react-three/drei"
 import Mystack from "./components/Mystack"
+import Experience from "./components/Experience"
 // import Cube from "./components/Cube"
 // import Scene from "./components/Scene"
 
@@ -27,6 +28,7 @@ function App() {
         </Html>
       </Three>
       <Mystack/>
+      <Experience/>
       {/* <Scene /> */}
       
     </div>

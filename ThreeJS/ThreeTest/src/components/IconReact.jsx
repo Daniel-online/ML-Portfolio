@@ -8,14 +8,17 @@ import PropTypes from 'prop-types'; // Import PropTypes
 const IconReact =  ({ containerRef }) => {
     useEffect(() => {
         const scene = new THREE.Scene();
-        const loader = new GLTFLoader();
+        
         const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-        containerRef.current.appendChild(renderer.domElement);
+        
+        if(containerRef.current){ 
+        
+            containerRef.current.appendChild(renderer.domElement);
         //defined FOV, aspect ratio,close & far props
+       
+            renderer.setSize(containerRef.current.innerWidth, containerRef.current.innerHeight); // 80% of window size
+        }
         const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 500);
-        const aspect = 0.5;
-        renderer.setSize(window.innerWidth * aspect, window.innerHeight * aspect); // 80% of window size
-
 
         //set camera position
         camera.position.set(0, 0, 5);
@@ -30,23 +33,25 @@ const IconReact =  ({ containerRef }) => {
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.update();
 
-        loader.load('./models/scene.gltf',// endereco do modelo 3d
-            function (gltf) {
+        const loadModel = (path, position) => {
+        const loader = new GLTFLoader();
+        loader.load(path,// endereco do modelo 3d
+            (gltf) =>{
                 scene.add(gltf.scene);
-                gltf.animations; // Array<THREE.AnimationClip>
-                gltf.scene; // THREE.Group
-                gltf.scenes; // Array<THREE.Group>
-                gltf.cameras; // Array<THREE.Camera>
-                gltf.asset; // Object
+                scene.position.set(...position);
             },// funcao pos carregamento do modelo
 
-            function (xhr) {
+           (xhr)=> {
                 console.log((xhr.loaded / xhr.total * 100) + '% loaded');
             },// Loading
-            function () {
-                console.log('An error happened');
+            (error)=>{
+                console.log('An error happened',error);
             }// error
         );
+    }
+
+    //set the object
+    loadModel('/models/scene.gltf', [2, 0, -3]);
         function animate() {
             scene.rotation.x += 0.02;
             scene.rotation.y += 0.02;
@@ -54,11 +59,15 @@ const IconReact =  ({ containerRef }) => {
 
         }
         renderer.setAnimationLoop(animate);
+        //adapt canvas size to screen
         const handleResize = () => {
-            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setSize(containerRef.current.innerWidth, containerRef.current.innerHeight);
             camera.aspect = window.innerWidth / window.innerHeight;
             camera.updateProjectionMatrix();
-          };
+        };
+
+
+        //
           window.addEventListener('resize', handleResize);
         return () => {
             renderer.setAnimationLoop(null); // Stop animation loop

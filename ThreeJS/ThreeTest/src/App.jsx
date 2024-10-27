@@ -1,12 +1,12 @@
-import Cube from "./components/Cube"
+// import Cube from "./components/Cube"
 import IconReact from "./components/IconReact"
-import MultiObjects from "./components/MultiObjects"
+// import MultiObjects from "./components/MultiObjects"
 
 function App() {
   return<>
-    <Cube/>
+    {/* <Cube/> */}
     <IconReact/>
-    <MultiObjects />
+    {/* <MultiObjects /> */}
   </>
 }
 
