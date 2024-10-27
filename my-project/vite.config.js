@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react() ],
   build: {
     rollupOptions: {
-      external: ['react-icons/fa', "react-icons/si", "react-icons/ri", "react-icons/di"], // Externalize react-icons/fa
+      // external: ['react-icons/fa', "react-icons/si", "react-icons/ri", "react-icons/di"], // Externalize react-icons/fa
     },
   },
 })
