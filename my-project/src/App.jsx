@@ -9,6 +9,7 @@ import Three from "./components/Three"
 import { Html } from "@react-three/drei"
 import Mystack from "./components/Mystack"
 import Experience from "./components/Experience"
+import WhatsappButton from "./components/WhatsappButton"
 // import Cube from "./components/Cube"
 // import Scene from "./components/Scene"
 
@@ -19,6 +20,7 @@ function App() {
       <div className="fixed top-0 -z-10 h-full w-full">
         <div className="overflow-x-hidden absolute inset-0 -z-10 h-screen w-screen items-center px-5 py-24 [background:radial-gradient(160%_160%_at_50%_20%,#000_40%,#00ff00_100%)]"></div>
       </div>
+      <WhatsappButton/>
       <Navbar />
       <Hero />
       <About />
