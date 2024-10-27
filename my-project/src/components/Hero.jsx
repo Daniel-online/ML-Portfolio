@@ -1,6 +1,6 @@
 import { HERO_CONTENT } from "../constants"
 import { useRef } from "react"
-import IconReact from "./../../../../ThreeJS/ThreeTest/src/components/IconReact"
+import IconReact from "./IconReact"
  
 const Hero = () => {
     const iconContainerRef = useRef(null);
