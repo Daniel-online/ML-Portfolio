@@ -20,7 +20,7 @@ const About = () => {
                 </div>
 {/* preciso separar isso em um componente */}
 
-                <div className='justify-center lg:justify-start ml-12 font-normal mr-6 w-3/4 h-1/4 px-2'>
+                <div className='border-neutral-900 justify-center lg:justify-start ml-12 font-normal mr-6 w-3/4 h-1/4 px-2'>
                     {ABOUT_TEXT_FIRST}
                     <br/>
                     {ABOUT_TEXT_SECOND}

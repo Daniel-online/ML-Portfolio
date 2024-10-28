@@ -5,8 +5,8 @@
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import About from "./components/About"
-import Three from "./components/Three"
-import { Html } from "@react-three/drei"
+// import Three from "./components/Three"
+// import { Html } from "@react-three/drei"
 import Mystack from "./components/Mystack"
 // import Experience from "./components/Experience"
 import WhatsappButton from "./components/WhatsappButton"
@@ -25,11 +25,11 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <Three>
+      {/* <Three>
         <Html fullscreen>
       
         </Html>
-      </Three>
+      </Three> */}
       <Mystack/>
       {/* <Experience/> */}
       <Card/>

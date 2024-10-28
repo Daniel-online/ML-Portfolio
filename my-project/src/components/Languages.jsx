@@ -5,7 +5,7 @@ import { SiLua, SiPython } from "react-icons/si"
 
 const Languages = () => {
     return (
-        <div>
+        <div className="border-neutral-900">
             <h2 className="mr-3 my-20 text-center text-4xl">
                 Languages
             </h2>

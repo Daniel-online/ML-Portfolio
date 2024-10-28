@@ -62,9 +62,9 @@ const Card = () => {
     }, []);
 
     return (<>
-        <h1 className="main__heading">Experience</h1>
+        <h1 className="main__heading border-neutral-900">Experience</h1>
 
-        <div className="main__cards cards">
+        <div className="border-neutral-900 main__cards cards">
             {EXPERIENCES.map((experience, index) => (
                 <div key={index} className="cards__inner  ml-3 mr-3 py-3">
                     <div className="cards__card card">

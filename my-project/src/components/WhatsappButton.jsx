@@ -7,7 +7,7 @@ const openChat = () => {
 const contactMe = () => {
   return <>
     <div className="text-bold rounded-lg bg-blue-500 ">
-      
+      CONTACT ME
     </div>
   </>
 }
