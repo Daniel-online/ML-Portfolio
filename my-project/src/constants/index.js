@@ -19,21 +19,28 @@ export const ABOUT_TEXT_FOURTH=`I am highly interested in working with aplicatio
 
 export const EXPERIENCES = [
   {
-    year: "may-2024 - sep-2024",
+    year: "Current",
+    role: "Jr Node & React Developer",
+    company: "Self Employed - OutZero Group",
+    description: `Building Apps with Node and React for small companies under contracts.`,
+    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
+  },
+  {
+    year: "05-2024 - 09-2024",
     role: "Jr Angular Developer",
     company: "FEMAR - CASNAV",
     description: `Worked for the Ministry Of Defense of Brasil and developed user interfaces for web applications using Angular 16 and Java. Worked closely with backend developers to integrate frontend and back, while also developing APIs using Spring framework.`,
     technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
   },
   {
-    year: "sep-2023 - may-2024",
+    year: "09-2023 - 05-2024",
     role: "BI Analyst Intern",
     company: "Vibra Energia",
     description: `I worked mostly on BI department, creating python scripts for automation, data-processing and excel-fromatting. Also worked with Tableau analisys and SAP systems (low-code).`,
     technologies: ["Python", "Svelte", "Three.js", "Postgres"],
   },
   {
-    year: "feb-2023 - sep-2023",
+    year: "02-2023 - 09-2023",
     role: "ChatBot Developer Intern",
     company: "HealthTool",
     description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,

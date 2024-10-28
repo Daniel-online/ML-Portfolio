@@ -17,16 +17,16 @@ const Languages = () => {
                     <RiNodejsLine className="text-5xl text-lime-600" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
-                    <RiJavascriptLine className="text-5xl text-yellow-600" />
+                    <RiJavascriptLine className="text-5xl text-yellow-500" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
                     <DiJava className="text-5xl text-red-600" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiPython className="text-5xl " />
+                    <SiPython className="text-5xl text-white" />
                 </div>
                 <div className=" flex-row rounded-2xl border-4 border-neutral-800 p-4">
-                    <SiLua className="text-5xl" />
+                    <SiLua className="text-5xl text-blue-600" />
                 </div>
 
             </div>
