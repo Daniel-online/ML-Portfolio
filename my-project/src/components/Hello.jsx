@@ -1,11 +1,16 @@
 import Typewriter from "./Typewriter"
+// import ReactTyped  from "react-typed";
+
 const Hello = () => {
-    const presentation="Hi, my name is Daniel";
-  return (
-    <div>
-      <Typewriter text={presentation} delay={100}/>
-    </div>
-  )
-}
+    return (
+      <div>
+        <h1 className="" >
+            <Typewriter text= "Hi, i am Daniel" delay={170} />_
+        </h1>
+       
+      </div>
+    );
+  };
+  
 
 export default Hello
