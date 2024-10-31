@@ -1,4 +1,4 @@
-import {  ABOUT_TEXT_FIRST, ABOUT_TEXT_FOURTH, ABOUT_TEXT_THIRD, ABOUT_TEXT_SECOND } from '../constants';
+import { ABOUT_TEXT_FIRST, ABOUT_TEXT_FOURTH, ABOUT_TEXT_THIRD, ABOUT_TEXT_SECOND } from '../constants';
 import perfil from './../assets/images/chatbot-dev.jpeg';
 
 const About = () => {
@@ -18,16 +18,15 @@ const About = () => {
                         My first office
                     </h6>
                 </div>
-{/* preciso separar isso em um componente */}
+                {/* preciso separar isso em um componente */}
 
                 <div className='border-neutral-900 justify-center lg:justify-start ml-12 font-normal mr-6 w-3/4 h-1/4 px-2'>
-                    {ABOUT_TEXT_FIRST}
-                    <br/>
-                    {ABOUT_TEXT_SECOND}
-                    <br/>
-                    {ABOUT_TEXT_THIRD}
-                    <br/>
-                    {ABOUT_TEXT_FOURTH}
+                    <ul className='list-disc'>
+                        <li>{ABOUT_TEXT_FIRST}</li><br></br>
+                        <li>{ABOUT_TEXT_SECOND}</li><br></br>
+                        <li>{ABOUT_TEXT_THIRD}</li><br></br>
+                        <li>{ABOUT_TEXT_FOURTH}</li><br></br>
+                    </ul>
                 </div>
             </div>
         </div>

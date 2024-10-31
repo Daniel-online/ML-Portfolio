@@ -4,10 +4,11 @@
   // import project4 from "./../assets/images/project4";
 
 export const HERO_CONTENT = `I enjoy building SAPs and APIs for the web 🌐, creating desktop apps and cli tools as well. Sometimes i venture into frontend and sometimes into backend. That said, my professional specialization is on Node.js 🟩 and i aim to become a core contributor to the project. 
-My journey of web development has brought me to two conclusions: 
-we need more security on the web and simpler production workflows
-These two statements may often conflict, but creating the balance within both is what made me deep dive into the node ecossystem to make it better than we thought it could be.
+My journey of web development has brought me to two conclusions: `
+export const  HERO_CONTENT2 = `These two statements may often conflict, but creating the balance within both is what made me deep dive into the node ecossystem to make it better than we thought it could be.
 `;
+export const CONCLUSION1 = `we need more security on the web`;
+export const CONCLUSION2 = `simpler production workflows`;
 
 export const ABOUT_TEXT_FIRST = ` Since i was a kid i loved to script silly things for games and attempted to make my own website at 14 (i failed haha). I started SWE course at UERJ university in 2021 at midst of the pandemic. Then, i was fascinated with the power of computer science and the capabilities some technologies as ruby and c could give to one single developer. 
 `
